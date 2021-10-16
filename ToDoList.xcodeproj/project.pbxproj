@@ -15,6 +15,12 @@
 		192F7B2E271379F900B5EDAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192F7B2C271379F900B5EDAA /* LaunchScreen.storyboard */; };
 		192F7B39271379F900B5EDAA /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192F7B38271379F900B5EDAA /* ToDoListTests.swift */; };
 		192F7B44271379F900B5EDAA /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192F7B43271379F900B5EDAA /* ToDoListUITests.swift */; };
+		192F7B562714041200B5EDAA /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192F7B552714041200B5EDAA /* TaskTests.swift */; };
+		192F7B592714056C00B5EDAA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192F7B582714056C00B5EDAA /* Task.swift */; };
+		19B1EC472717F3AF00E301BD /* ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1EC462717F3AF00E301BD /* ManagerTests.swift */; };
+		19B1EC4A2717F48000E301BD /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1EC492717F48000E301BD /* TaskManager.swift */; };
+		19D8728C27155B95001994D9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8728B27155B95001994D9 /* Location.swift */; };
+		19D8728E2716A160001994D9 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8728D2716A160001994D9 /* LocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		192F7B3F271379F900B5EDAA /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		192F7B43271379F900B5EDAA /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		192F7B45271379F900B5EDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192F7B552714041200B5EDAA /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		192F7B582714056C00B5EDAA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		19B1EC462717F3AF00E301BD /* ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTests.swift; sourceTree = "<group>"; };
+		19B1EC492717F48000E301BD /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		19D8728B27155B95001994D9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		19D8728D2716A160001994D9 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,10 @@
 		192F7B20271379F300B5EDAA /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				192F7B21271379F300B5EDAA /* AppDelegate.swift */,
-				192F7B23271379F400B5EDAA /* SceneDelegate.swift */,
-				192F7B25271379F400B5EDAA /* ViewController.swift */,
-				192F7B27271379F400B5EDAA /* Main.storyboard */,
-				192F7B2A271379F900B5EDAA /* Assets.xcassets */,
-				192F7B2C271379F900B5EDAA /* LaunchScreen.storyboard */,
-				192F7B2F271379F900B5EDAA /* Info.plist */,
+				192F7B5A2714057200B5EDAA /* Model */,
+				192F7B5327137A2000B5EDAA /* Controller */,
+				192F7B5427137A3B00B5EDAA /* Supporting Files */,
+				19B1EC4B2717F56F00E301BD /* Manager */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -115,6 +124,8 @@
 			children = (
 				192F7B38271379F900B5EDAA /* ToDoListTests.swift */,
 				192F7B3A271379F900B5EDAA /* Info.plist */,
+				192F7B572714041900B5EDAA /* Model */,
+				19B1EC482717F3B400E301BD /* Manager */,
 			);
 			path = ToDoListTests;
 			sourceTree = "<group>";
@@ -126,6 +137,61 @@
 				192F7B45271379F900B5EDAA /* Info.plist */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		192F7B5327137A2000B5EDAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				192F7B25271379F400B5EDAA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		192F7B5427137A3B00B5EDAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				192F7B21271379F300B5EDAA /* AppDelegate.swift */,
+				192F7B23271379F400B5EDAA /* SceneDelegate.swift */,
+				192F7B27271379F400B5EDAA /* Main.storyboard */,
+				192F7B2A271379F900B5EDAA /* Assets.xcassets */,
+				192F7B2C271379F900B5EDAA /* LaunchScreen.storyboard */,
+				192F7B2F271379F900B5EDAA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		192F7B572714041900B5EDAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				192F7B552714041200B5EDAA /* TaskTests.swift */,
+				19D8728D2716A160001994D9 /* LocationTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		192F7B5A2714057200B5EDAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				192F7B582714056C00B5EDAA /* Task.swift */,
+				19D8728B27155B95001994D9 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19B1EC482717F3B400E301BD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				19B1EC462717F3AF00E301BD /* ManagerTests.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		19B1EC4B2717F56F00E301BD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				19B1EC492717F48000E301BD /* TaskManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B1EC4A2717F48000E301BD /* TaskManager.swift in Sources */,
+				192F7B592714056C00B5EDAA /* Task.swift in Sources */,
 				192F7B26271379F400B5EDAA /* ViewController.swift in Sources */,
+				19D8728C27155B95001994D9 /* Location.swift in Sources */,
 				192F7B22271379F300B5EDAA /* AppDelegate.swift in Sources */,
 				192F7B24271379F400B5EDAA /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192F7B562714041200B5EDAA /* TaskTests.swift in Sources */,
+				19D8728E2716A160001994D9 /* LocationTests.swift in Sources */,
 				192F7B39271379F900B5EDAA /* ToDoListTests.swift in Sources */,
+				19B1EC472717F3AF00E301BD /* ManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,7 +510,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTYW28W757;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = "ToDoList/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +530,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTYW28W757;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = "ToDoList/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
