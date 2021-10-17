@@ -20,8 +20,6 @@ class TaskListViewControllerTests: XCTestCase {
         sut = vc as? TaskListViewController
         
         sut.loadViewIfNeeded()
-          
-        
     }
 
     override func tearDownWithError() throws {
